@@ -86,3 +86,11 @@ plt +geom_point() + geom_line(aes(y=yvals), color='red')
 lm(hp ~ mpg + disp + drat + wt + qsec, data=mtcars)
 # Generate summary statistics
 summary(lm(hp ~ mpg + disp + drat + wt + qsec, data=mtcars))
+
+?chisq.test()
+# Generate contingency table
+table(mpg$class,mpg$year)
+# Generate contingency table
+tbl <- table(mpg$class,mpg$year)
+# Compare categorical distributions
+chisq.test(tbl)
