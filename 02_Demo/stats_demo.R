@@ -46,3 +46,43 @@ mtcars_filt$cyl <- factor(mtcars_filt$cyl)
 # Compare means across multiple levels
 aov(hp~cyl,data=mtcars_filt)
 summary(aov(hp~cyl,data=mtcars_filt))
+
+?cor()
+head(mtcars)
+# Import dataset into ggplot2
+plt<- ggplot(mtcars,aes(x=hp,y=qsec))
+# Create scatter plot
+plt + geom_point()
+# Calculate correlation coefficient
+cor(mtcars$hp,mtcars$qsec)
+
+# Read dataset
+used_cars<- read.csv('used_car_data.csv',stringsAsFactors = F)
+head(used_cars)
+# Import dataset into ggplot2
+plt <- ggplot(used_cars,aes(x=Miles_Driven,y=Selling_Price))
+# Create scatter plot
+plt +geom_point()
+# Calculate correlation coefficient
+cor(used_cars$Miles_Driven,used_cars$Selling_Price)
+
+# Convert data frame into numeric matrix
+used_matrix <- as.matrix(used_cars[,c('Selling_Price','Present_Price','Miles_Driven')])
+cor(used_matrix)
+
+?lm()
+# Create a linear model
+summary(lm(hp ~ qsec,mtcars))
+# Create linear model
+model <- lm(hp ~ qsec,mtcars)
+# Determine y-axis values from linear model
+yvals <- model$coefficients['qsec']*mtcars$qsec + model$coefficients['(Intercept)']
+# Import dataset into ggplot2
+plt <- ggplot(mtcars,aes(x=qsec,y=hp))
+# Plot scatter and linear models
+plt +geom_point() + geom_line(aes(y=yvals), color='red')
+
+# Generate multiple linear regression model
+lm(hp ~ mpg + disp + drat + wt + qsec, data=mtcars)
+# Generate summary statistics
+summary(lm(hp ~ mpg + disp + drat + wt + qsec, data=mtcars))
