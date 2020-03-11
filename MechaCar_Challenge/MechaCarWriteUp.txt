@@ -1,16 +1,4 @@
-# R_Analysis
-Using R to create statistical analysis about Auto dealership data.
-
-## Summary
-Used multiple R statistical tests to measure different production issues to see design flaws are at fault for poor mpg and PSI.
-
-## Resources
-- Data Sources: MechaCar_mpg.csv, Suspension_Coil.csv
-- Software: R 3.6.2, RStudio 1.2.5001
-
-## Analysis
-### MPG Regression
-
+MPG Regression
 Coefficients:
      (Intercept)    vehicle.length    vehicle.weight     spoiler.angle  ground.clearance           AWD
       -1.040e+02         6.267e+00         1.245e-03         6.877e-02         3.546e+00    -3.411e+00  
@@ -34,7 +22,7 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 - The slope of the linear model cannot be considered to be zero. The reason why is by looking at the p-value from the regression model. It shows that that the p-value is 5.35e-11 which is alot smaller than the assumed significance level of 0.05%. This means that the null hypothesis is rejected which then translates that the slope of the linear model is not zero.
 - This linear regression model does help to show the relationships with mpg to the other variables. Since the null hypothesis is rejected that means that there is a correlation between several of the variables and the mpg. It shows that vehicle.length and ground.clearance does have a significant correlation with mpg. And that something does need to change with those variables to improve mpg. 
 
-### Suspension Coil Summary
+Suspension Coil Summary
 
 > mean(suspension_coil$PSI)
 [1] 1498.78
@@ -48,7 +36,7 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 - Looking at the variance for the suspension coil PSI, the value is 62.29 pounds per inch which does not exceed the 100 pounds per inch limit.
 - The current manufacturing data does match these requirements because the variance for the PSI shows that it is below 100. 
 
-### Suspension Coil T-Test
+Suspension Coil T-Test
 One Sample t-test
 
 data:  log10(suspension_coil$PSI)
@@ -62,7 +50,7 @@ mean of x
 
 - Looking at the p-value that was resulted from the One Sample T-Test, the value is 1 which much higher than the the significance level of 0.05%. This means that there is not enough evidence to reject the null hypothesis. This means that the suspension coil's PSI result is statistically similar to the mean population results of 1,500 PSI.
 
-### Own Study
+Own Study
 
 - A test that can be useful to measure are different car options. When looking at different car models being sold, each company has different options and price points for the car. It would be useful to see if customers have a preference for certain colors or if premier options that come stocked with better wheels and engines would be a good reason for customers to purchase. 
 - Some questions that could be asked is "What color would be most popular with the customers?" and another would be "Would a premium option car generate as much or more revenue than a base model car?"
