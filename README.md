@@ -15,6 +15,7 @@ Coefficients:
 |(Intercept) | vehicle.length | vehicle.weight | spoiler.angle | ground.clearance | AWD|
 |------------|----------------|----------------|---------------|------------------|----|
 | -1.040e+02 |   6.267e+00    |     1.245e-03  |  6.877e-02    |  3.546e+00 |-3.411e+00|
+
 Coefficients:
 |                  | Estimate   | Std. Error | t value | Pr(>|t|) |     |
 |------------------|------------|------------|---------|----------|-----|
@@ -25,7 +26,7 @@ Coefficients:
 | ground.clearance | 3.546e+00  | 5.412e-01  | 6.551   | 5.21e-08 | *** |
 | AWD              | -3.411e+00 | 2.535e+00  | -1.346  | 0.1852   |     |
 ---
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Signif. codes:  0: '***' , 0.001:  ‘**’, 0.01: ‘*’, 0.05: ‘.’, 0.1: ‘ ’, 1
 
 Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
@@ -37,14 +38,14 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
 ### Suspension Coil Summary
 
-> mean(suspension_coil$PSI)
-[1] 1498.78
-> median(suspension_coil$PSI)
-[1] 1500
-> var(suspension_coil$PSI)
-[1] 62.29356
-> sd(suspension_coil$PSI)
-[1] 7.892627
+- mean(suspension_coil$PSI)
+* [1] 1498.78
+- median(suspension_coil$PSI)
+* [1] 1500
+- var(suspension_coil$PSI)
+* [1] 62.29356
+- sd(suspension_coil$PSI)
+* [1] 7.892627
 
 - Looking at the variance for the suspension coil PSI, the value is 62.29 pounds per inch which does not exceed the 100 pounds per inch limit.
 - The current manufacturing data does match these requirements because the variance for the PSI shows that it is below 100. 
