@@ -15,7 +15,7 @@ Coefficients:
 |(Intercept) | vehicle.length | vehicle.weight | spoiler.angle | ground.clearance | AWD|
 |------------|----------------|----------------|---------------|------------------|----|
 | -1.040e+02 |   6.267e+00    |     1.245e-03  |  6.877e-02    |  3.546e+00 |-3.411e+00|
-
+---
 Coefficients:
 |                  | Estimate   | Std. Error | t value | Pr(>|t|) |     |
 |------------------|------------|------------|---------|----------|-----|
@@ -26,7 +26,7 @@ Coefficients:
 | ground.clearance | 3.546e+00  | 5.412e-01  | 6.551   | 5.21e-08 | *** |
 | AWD              | -3.411e+00 | 2.535e+00  | -1.346  | 0.1852   |     |
 ---
-Signif. codes:  0: '***' , 0.001:  ‘**’, 0.01: ‘*’, 0.05: ‘.’, 0.1: ‘ ’, 1
+Signif. codes: | 0: *** | 0.001:  ‘**’, 0.01: ‘*’, 0.05: ‘.’, 0.1: ‘ ’, 1
 
 Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
