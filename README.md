@@ -1,5 +1,7 @@
 # R_Analysis
-Using R to create statistical analysis about Auto dealership data.
+Using R to create statistical analysis about data for an Auto Dealership.
+
+!(Dealership)[Images/Dealership.jpg]
 
 ## Summary
 Used multiple R statistical tests to measure different production issues to see design flaws are at fault for poor mpg and PSI.
@@ -19,7 +21,7 @@ Coefficients:
 
 Coefficients:
 
-|                  | Estimate   | Std. Error | t value | Pr(>|t|) |     |
+|      &nbsp;      | Estimate   | Std. Error | t value | Pr(>|t|) |&nbsp;|
 |------------------|------------|------------|---------|----------|-----|
 | (Intercept)      | -1.040e+02 | 1.585e+01  | -6.559  | 5.08e-08 | *** |
 | vehicle.length   | 6.267e+00  | 6.553e-01  | 9.563   | 2.60e-12 | *** |
