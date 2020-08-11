@@ -113,13 +113,16 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 One Sample t-test
 
 data:  log10(suspension_coil$PSI)
-t = 0, df = 149, p-value = 1
+<br>t = 0, df = 149, p-value = 1
+
 alternative hypothesis: true mean is not equal to 3.175732
+
 95 percent confidence interval:
- 3.175361 3.176103
+<br> 3.175361 3.176103
+
 sample estimates:
-mean of x 
- 3.175732 
+<br>mean of x 
+<br> 3.175732 
 
 - Looking at the p-value that was resulted from the One Sample T-Test, the value is 1 which much higher than the the significance level of 0.05%. This means that there is not enough evidence to reject the null hypothesis. This means that the suspension coil's PSI result is statistically similar to the mean population results of 1,500 PSI.
 
