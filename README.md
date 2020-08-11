@@ -1,7 +1,7 @@
 # R_Analysis
 Using R to create statistical analysis about data for an Auto Dealership.
 
-!(Dealership)[Images/Dealership.jpg]
+![Dealership](Images/Dealership.jpg)
 
 ## Summary
 Used multiple R statistical tests to measure different production issues to see design flaws are at fault for poor mpg and PSI.
@@ -21,16 +21,68 @@ Coefficients:
 
 Coefficients:
 
-|      &nbsp;      | Estimate   | Std. Error | t value | Pr(>|t|) |&nbsp;|
-|------------------|------------|------------|---------|----------|-----|
-| (Intercept)      | -1.040e+02 | 1.585e+01  | -6.559  | 5.08e-08 | *** |
-| vehicle.length   | 6.267e+00  | 6.553e-01  | 9.563   | 2.60e-12 | *** |
-| vehicle.weight   | 1.245e-03  | 6.890e-04  | 1.807   | 0.0776   | .   |
-| spoiler.angle    | 6.877e-02  | 6.653e-02  | 1.034   | 0.3069   |     |
-| ground.clearance | 3.546e+00  | 5.412e-01  | 6.551   | 5.21e-08 | *** |
-| AWD              | -3.411e+00 | 2.535e+00  | -1.346  | 0.1852   |     |
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th>Estimate</th>
+    <th>Std. Error</th>
+    <th>t value</th>
+    <th>Pr(>|t|)</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>(Intercept)</td>
+    <td>-1.040e+02</td>
+    <td>1.585e+01</td>
+    <td>-6.559</td>
+    <td>5.08e-08</td>
+    <td>***</td>
+  </tr>
+  <tr>
+    <td>vehicle.length</td>
+    <td>6.267e+00</td>
+    <td>6.553e-01</td>
+    <td>9.563</td>
+    <td>2.60e-12</td>
+    <td>***</td>
+  </tr>
+ <tr>
+    <td>vehicle.weight</td>
+    <td>1.245e-03</td>
+    <td>6.890e-04</td>
+    <td>1.807</td>
+    <td>0.0776</td>
+    <td>.</td>
+  </tr>
+ <tr>
+    <td>spoiler.angle</td>
+    <td>6.877e-02</td>
+    <td>6.653e-02</td>
+    <td>1.034</td>
+    <td>0.3069</td>
+    <td></td>
+  </tr>
+ <tr>
+    <td>ground.clearance</td>
+    <td>3.546e+00</td>
+    <td>5.412e-01</td>
+    <td>6.551</td>
+    <td>5.21e-08</td>
+    <td>***</td>
+  </tr>
+ <tr>
+    <td>AWD</td>
+    <td>-3.411e+00</td>
+    <td>2.535e+00</td>
+    <td>-1.346</td>
+    <td>0.1852</td>
+    <td></td>
+  </tr>
+</table>
+
 ---
-Signif. codes: | 0: *** | 0.001:  '**', 0.01: '*', 0.05: ‘.’, 0.1: ‘ ’, 1
+
+Signif. codes: 0: `***`, 0.001:  `**`, 0.01: `*`, 0.05: `.`, 0.1: ` `, 1
 
 Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
@@ -42,17 +94,17 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
 ### Suspension Coil Summary
 
-mean(suspension_coil$PSI)
-* [1] 1498.78
+* mean(suspension_coil$PSI)
+  * [1] 1498.78
 
-median(suspension_coil$PSI)
-* [1] 1500
+* median(suspension_coil$PSI)
+  * [1] 1500
 
-var(suspension_coil$PSI)
-* [1] 62.29356
+* var(suspension_coil$PSI)
+  * [1] 62.29356
 
-sd(suspension_coil$PSI)
-* [1] 7.892627
+* sd(suspension_coil$PSI)
+  * [1] 7.892627
 
 - Looking at the variance for the suspension coil PSI, the value is 62.29 pounds per inch which does not exceed the 100 pounds per inch limit.
 - The current manufacturing data does match these requirements because the variance for the PSI shows that it is below 100. 
