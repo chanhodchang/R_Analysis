@@ -85,8 +85,8 @@ Coefficients:
 Signif. codes: 0: `***`, 0.001:  `**`, 0.01: `*`, 0.05: `.`, 0.1: ` `, 1
 
 Residual standard error: 8.774 on 44 degrees of freedom
-Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
-F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
+<br>Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
+<br>F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
 - When looking at the linear regression model that was created based on mpg, it showed that the Intercept, vehicle.length, and ground.clearance all are very unlikely to provide random amounts of variance. This is shown by looking at the Pr(>|t|) values and all three have a significance code of 0.
 - The slope of the linear model cannot be considered to be zero. The reason why is by looking at the p-value from the regression model. It shows that that the p-value is 5.35e-11 which is alot smaller than the assumed significance level of 0.05%. This means that the null hypothesis is rejected which then translates that the slope of the linear model is not zero.
